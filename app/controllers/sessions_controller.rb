@@ -9,7 +9,6 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to user
     else
-      # 実装はまだ完了してません
       flash.now[:danger] = 'メールアドレスとパスワードの情報が一致しませんでした。'
       render 'new'
     end 
